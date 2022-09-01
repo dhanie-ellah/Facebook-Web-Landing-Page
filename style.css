@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --facebook-blue: #0f6be4;
+    --facebook-green: #42b72a;
+    --facebook-bg: #f0f2f5;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--facebook-bg);
+  padding: 0 125px;
+}
+
+main{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+div.textarea{
+  width: 60%;
+}
+
+div.textarea h1{
+  font-size: 55px;
+  font-weight: 700;
+  color: var(--facebook-blue);
+}
+
+div.textarea p{
+  font-size: 23px;
+}
+
+div.formarea{
+  width: 40%;
+  text-align: center;
+  font-size: 12px;
+}
+
+form{
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 25px rgb(0, 0, 0, .25);
+  margin-bottom: 15px;
+}
+
+input{
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+
+a.create-page{
+  font-weight: 700;
+}
+
+a.forgotten{
+  color: var(--facebook-blue);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+button.login{
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: var(--facebook-blue);
+  border: none;
+  border-radius: 5px;
+  opacity: 0.9;
+  color: white;
+  font-size: 17px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+a.forgotten{
+  font-size: 12px;
+}
+
+hr{
+  margin: 15px;
+  border: none;
+  background-color: grey;
+  height: .5px;
+}
+
+button.create{
+  font-size: 15px;
+  font-weight: 700;
+  background-color: var(--facebook-green);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+}
+
+@media (max-width: 1000px){
+  main{
+    gap: 15px;
+  }
+}
